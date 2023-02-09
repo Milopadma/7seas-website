@@ -1,18 +1,17 @@
 ---
 import "@fontsource/inter/variable.css";
 // import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+// import Amenities from "~/components/amenities.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/rooms.astro";
+// import Rooms from "~/components/rooms.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
-const description =
-  "Your escape from paradise.";
+const description = "Your escape from paradise.";
 ---
 
 <!DOCTYPE html>
@@ -20,14 +19,14 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
     <title>7SEAS</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="7SEAS" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
@@ -65,8 +64,8 @@ const description =
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Intro />
-      <Showcase />
-      <Features />
+      <!-- <Rooms /> -->
+      <!-- <Amenities /> -->
       <!-- <Compatibility /> -->
     </div>
     <Footer />

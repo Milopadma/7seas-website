@@ -1,11 +1,11 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
-import type { FeatureItem } from "~/types";
+import type { AmenityItem } from "~/types";
 
-const features: Array<FeatureItem> = [
+const amenities: Array<AmenityItem> = [
   {
-    title: "Bring Your Own Framework",
+    title: "Beach-side",
     description:
       "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
     icon: "mdi:handshake",
@@ -43,10 +43,10 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
-<ContentSection title="Rooms" id="features">
+<ContentSection title="Rooms" id="amenities">
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
-      features.map(({ title, description, icon }) => (
+      amenities.map(({ title, description, icon }) => (
         <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
           <div class="h-16 w-16 rounded-full border-2 border-current p-3">
             <Icon name={icon} />
