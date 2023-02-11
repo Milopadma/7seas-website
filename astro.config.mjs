@@ -16,4 +16,8 @@ export default defineConfig({
       external: ["svgo"],
     },
   },
+  // using GSAP in Astro
+  build: {
+    transpile: ["gsap"],
+  },
 });

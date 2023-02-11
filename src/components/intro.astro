@@ -1,19 +1,24 @@
----
-import ContentSection from "~/components/content-section.astro";
----
-
-<ContentSection title="7SEAS Cottages" id="bookings">
-  <Fragment slot="lead">
-    Escape from your daily routines. <br /> Or bring them here. <br />
+<div
+  title="7SEAS Cottages"
+  id="bookings"
+  class="h-full flex items-center justify-center"
+>
+  <div class="flex flex-col justify-center items-center gap-4 ">
+    <h3 class="text-center font-extrabold tracking-tight text-6xl">
+      7 SEAS <br /> Cottages
+    </h3>
+    <div class="max-w-xl text-center font-extrabold text-2xl">
+      Break free from your daily routines. <br /> Or bring them here. <br />
+    </div>
     Completely up to you.
-  </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-1">
-    <a
-      href="https://www.booking.com/hotel/id/seven-seas-cottages.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaGiIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4ArXNk58GwAIB0gIkMmUyYTA0NmQtNzIxMi00ZWIwLWFkZTUtYzg5OGNjYWYxZjRl2AIF4AIB&sid=2590c4e8752905997f9cd7ff44084ba2&dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1675945665;srpvid=682d57a0656f031b;type=total;ucfs=1&#hotelTmpl"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <!-- <Icon pack="mdi" name="rocket" class="h-8" /> -->
-      <span class="px-40">Book</span>
-    </a>
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-1">
+      <a
+        href="https://www.booking.com/hotel/id/seven-seas-cottages.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaGiIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4ArXNk58GwAIB0gIkMmUyYTA0NmQtNzIxMi00ZWIwLWFkZTUtYzg5OGNjYWYxZjRl2AIF4AIB&sid=2590c4e8752905997f9cd7ff44084ba2&dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1675945665;srpvid=682d57a0656f031b;type=total;ucfs=1&#hotelTmpl"
+        class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+      >
+        <!-- <Icon pack="mdi" name="rocket" class="h-8" /> -->
+        <span class="px-40">Book</span>
+      </a>
+    </div>
   </div>
-</ContentSection>
+</div>
